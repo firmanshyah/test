@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glaser Pride</title>
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="css/googlefont.css" />
+
+    <!-- My style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="shortcut icon"
+      href="favicon/logo-putih-only.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- connect -->
+      <div class="hidden-section">
+        $(if chap-id)
+        <form name="sendin" action="$(link-login-only)" method="post">
+          <input type="hidden" name="username" />
+          <input type="hidden" name="password" />
+          <input type="hidden" name="dst" value="$(link-orig)" />
+          <input type="hidden" name="popup" value="true" />
+        </form>
+
+        <script type="text/javascript" src="/md5.js"></script>
+        <script type="text/javascript">
+          function doLogin() {
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5(
+              "$(chap-id)" + document.login.password.value + "$(chap-challenge)"
+            );
+            document.sendin.submit();
+            return false;
+          }
+        </script>
+        $(endif)
+      </div>
+      <!-- end connect -->
+
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form
+              action="$(link-login-only)"
+              method="post"
+              $(if
+              chap-id)
+              onSubmit="return doLogin()"
+              $(endif)
+              name="login"
+              autocomplete="off"
+              class="sign-in-form"
+            >
+              <div class="logo">
+                <img src="img/logo.png" alt="inflynetworks" />
+              </div>
+
+              <div class="heading">
+                <h2>Welcome Back</h2>
+                <a
+                  href="#"
+                  id="pujasera-link"
+                  data-target-url="https://maps.app.goo.gl/zzx4tGoYrr746vN66"
+                  class="toggle"
+                  >Pujasera Yu Ragil</a
+                >
+                <p>
+                  Dapatkan akses internet dengan <br />klik tombol dibawah ini
+                </p>
+              </div>
+
+              <div class="actual-form">
+                <input type="hidden" name="dst" value="$(link-orig)" />
+
+                <input type="hidden" name="popup" value="true" />
+                <a
+                  href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"
+                  class="sign-btn"
+                  >Akses Internet</a
+                >
+              </div>
+            </form>
+
+            <div class="social-media">
+              <a
+                href="#"
+                id="whatsapp-link"
+                data-target-url="https://wa.me/6283865566635"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+
+              <a
+                href="#"
+                id="inflymaps-link"
+                data-target-url="https://maps.app.goo.gl/q2fJxRaUKf7gWYvW9"
+                ><i class="fa-solid fa-map-location-dot"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="img/image2.png" class="image img-1 show" alt="" />
+              <img src="img/image2.png" class="image img-2" alt="" />
+              <img src="img/image2.png" class="image img-3" alt="" />
+              <img src="img/image2.png" class="image img-4" alt="" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>Internet Cepat</h2>
+                  <h2>Respon Cepat</h2>
+                  <h2>Sepenuhnya Fiber</h2>
+                  <h2>Bantuan 24/7</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+                <span data-value="4"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
