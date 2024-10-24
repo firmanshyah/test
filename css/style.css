@@ -17,7 +17,7 @@ main {
   overflow: hidden;
   /* background: linear-gradient(135deg, #009970 0%, #00c6a2 100%); */
   /* background-color: #009970; */
-  background: url(../img/image2.png) no-repeat center center;
+  background: url(../img/background.jpeg) no-repeat center center;
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -148,7 +148,8 @@ form {
 }
 
 .sign-btn:hover {
-  background-color: #00a884;
+  /* background-color: #00a884; */
+  background: linear-gradient(to right, #008f99, #01bcc6);
   transform: translateY(-3px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
@@ -215,7 +216,9 @@ form {
   width: 55%;
   left: 45%;
   top: 0;
-  background-color: #009970;
+  /* background-color: #009970; */
+  background: linear-gradient(to right, #008f99, #01bcc6);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
   border-radius: 2rem;
   display: grid;
   grid-template-rows: auto 1fr;
@@ -225,6 +228,8 @@ form {
 }
 
 .images-wrapper {
+  margin: 20px;
+  border-radius: 20px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -310,6 +315,11 @@ form {
 }
 
 @media (max-width: 850px) {
+  main {
+    background: url(../img/image2.png) no-repeat center center;
+    background-size: cover;
+  }
+
   .box {
     height: auto;
     max-width: 550px;
