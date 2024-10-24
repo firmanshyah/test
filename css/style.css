@@ -92,6 +92,10 @@ form {
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
+.heading {
+  margin-bottom: -15px;
+}
+
 .heading h2 {
   font-size: 2rem;
   font-weight: 600;
@@ -102,6 +106,18 @@ form {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent; */
+}
+
+.heading .hospot {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #151515;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .heading p {
@@ -116,7 +132,7 @@ form {
 .toggle {
   color: #151111;
   text-decoration: none;
-  font-size: 1.45rem;
+  font-size: 1.25rem;
   font-weight: bold;
   transition: 0.3s;
   display: block;
