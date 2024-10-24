@@ -97,6 +97,7 @@ form {
 }
 
 .heading h2 {
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 600;
   color: #151111;
@@ -109,6 +110,7 @@ form {
 }
 
 .heading .hospot {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
   color: #151515;
