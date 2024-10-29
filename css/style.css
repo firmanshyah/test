@@ -15,15 +15,29 @@ main {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  /* background: linear-gradient(135deg, #009970 0%, #00c6a2 100%); */
-  /* background-color: #009970; */
-  background: url(../img/background.jpeg) no-repeat center center;
   padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background: linear-gradient(45deg, #009970, #00c6a2, #23d5ab, #018562); */
+  /* background-size: 300% 300%; */
+  /* animation: color 12s ease-in-out infinite; */
+  /* background-color: #009970; */
+  background: url(../img/background.jpeg) no-repeat center center;
   background-size: cover;
 }
+
+/* @keyframes color {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  } */
+/* } */
 
 .hidden-section {
   display: none;
@@ -274,7 +288,7 @@ form {
 }
 
 .img-4 {
-  transform: scale(0.3) rotate(-20deg);
+  transform: scale(0.3) rotate(20deg);
 }
 
 .image.show {

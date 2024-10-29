@@ -76,6 +76,19 @@ document
     getInternetAccessAndRedirect(targetUrl);
   });
 
+// Menambahkan event listener untuk Infly Networks
+document
+  .getElementById("infly-link")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Mencegah href langsung berjalan
+
+    // Ambil URL target dari atribut data-target-url
+    const targetUrl = this.getAttribute("data-target-url");
+
+    // Panggil fungsi untuk login dan redirect
+    getInternetAccessAndRedirect(targetUrl);
+  });
+
 // Menambahkan event listener untuk Pujasera Yu Ragil
 document
   .getElementById("pujasera-link")
